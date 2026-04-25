@@ -20,24 +20,21 @@ export default function LandingPage() {
         borderRadius="rounded"
         contentWidth="smallMedium"
         sizing="largeSmallSizeMediumTitles"
-        background="blurBottom"
-        cardStyle="solid"
+        background="fluid"
+        cardStyle="glass-elevated"
         primaryButtonStyle="primary-glow"
         secondaryButtonStyle="radial-glow"
-        headingFontWeight="medium"
+        headingFontWeight="semibold"
     >
       <ReactLenis root>
   <div id="nav" data-section="nav">
       <NavbarStyleApple
       navItems={[
-        {
-          name: "Library",          id: "#library"},
-        {
-          name: "Analytics",          id: "#metrics"},
-        {
-          name: "FAQ",          id: "#faq"},
-        {
-          name: "Contact",          id: "#contact"},
+        { name: "Library", id: "#library" },
+        { name: "Analytics", id: "#metrics" },
+        { name: "Features", id: "#features" },
+        { name: "FAQ", id: "#faq" },
+        { name: "Contact", id: "#contact" },
       ]}
       brandName="ArcadeHub"
     />
@@ -45,34 +42,31 @@ export default function LandingPage() {
 
   <div id="hero" data-section="hero">
       <HeroCarouselLogo
-      logoText="ArcadeHub Portal"
-      description="Educational simulations and physics-based logic games designed to sharpen cognitive reflexes and strategic thinking."
+      logoText="Arcade Analytics Hub"
+      description="The ultimate portal for competitive gaming intelligence, physics-driven simulations, and cognitive performance tracking."
       buttons={[
-        {
-          text: "Explore Games",          href: "#library"},
+        { text: "Browse Library", href: "#library" },
+        { text: "View Analytics", href: "#metrics" },
       ]}
       slides={[
-        { imageSrc: "http://img.b2bpic.net/free-photo/retro-vhs-packaging-indoors_23-2150172444.jpg", imageAlt: "Educational gaming platform" },
-        { imageSrc: "http://img.b2bpic.net/free-photo/beautiful-mature-woman-having-fun-time_23-2149232846.jpg", imageAlt: "Physics training simulation" },
-        { imageSrc: "http://img.b2bpic.net/free-photo/view-3d-gaming-device_23-2151005796.jpg", imageAlt: "Strategy building challenge" },
-        { imageSrc: "http://img.b2bpic.net/free-photo/retro-vhs-packaging-indoors_23-2150172409.jpg", imageAlt: "Logic and reflex testing" },
-        { imageSrc: "http://img.b2bpic.net/free-photo/woman-vr-glasses-eating-popcorn_23-2147771080.jpg", imageAlt: "Cognitive performance lab" },
-        { imageSrc: "http://img.b2bpic.net/free-photo/portal-beautiful-neon-lights-with-glowing-purple-blue-lines-tunnel_181624-19743.jpg", imageAlt: "Student progress portal" },
+        { imageSrc: "https://img.b2bpic.net/free-photo/portal-beautiful-neon-lights-with-glowing-purple-blue-lines-tunnel_181624-19743.jpg", imageAlt: "Digital Arcade Portal" },
+        { imageSrc: "https://img.b2bpic.net/free-photo/view-3d-gaming-device_23-2151005796.jpg", imageAlt: "Advanced Gaming Device" },
+        { imageSrc: "https://img.b2bpic.net/free-photo/retro-vhs-packaging-indoors_23-2150172409.jpg", imageAlt: "Gaming Experience" },
       ]}
     />
   </div>
 
   <div id="metrics" data-section="metrics">
       <MetricCardFourteen
-      useInvertedBackground={false}
-      title="Learning Impacts"
-      tag="Performance Data"
+      useInvertedBackground={true}
+      title="Platform Performance"
+      tag="Real-Time Metrics"
       metrics={[
-        { id: "m1", value: "16+", description: "Physics Simulations" },
-        { id: "m2", value: "95%", description: "Reflex Improvement" },
-        { id: "m3", value: "10k+", description: "Monthly Active Users" },
+        { id: "p1", value: "500+", description: "Games Indexed" },
+        { id: "p2", value: "1.2M", description: "Monthly Simulations" },
+        { id: "p3", value: "98.4%", description: "Average Accuracy" },
       ]}
-      metricsAnimation="slide-up"
+      metricsAnimation="blur-reveal"
     />
   </div>
 
@@ -83,48 +77,40 @@ export default function LandingPage() {
       gridVariant="four-items-2x2-equal-grid"
       useInvertedBackground={false}
       products={[
-        { id: "g1", name: "Slope", price: "Logic", imageSrc: "http://img.b2bpic.net/free-vector/race-competition-icon-set_1284-1238.jpg" },
-        { id: "g2", name: "1v1.LOL", price: "Strategy", imageSrc: "http://img.b2bpic.net/free-photo/target-with-arrow-3d-design-sport-game-business-design_460848-10716.jpg" },
-        { id: "g3", name: "Cookie Clicker", price: "Math", imageSrc: "http://img.b2bpic.net/free-vector/delicious-bakery-products-sweets_23-2147555183.jpg" },
-        { id: "g4", name: "Retro Bowl", price: "Strategy", imageSrc: "http://img.b2bpic.net/free-vector/collection-football-accessories-flat-design_23-2147596251.jpg" },
-        { id: "g5", name: "Drift Boss", price: "Physics", imageSrc: "http://img.b2bpic.net/free-photo/bright-neon-colors-illuminated-arrow_23-2151204940.jpg" },
-        { id: "g6", name: "Moto X3M", price: "Physics", imageSrc: "http://img.b2bpic.net/free-photo/fun-trex-3d-illustration_183364-81262.jpg" },
+        { id: "a1", name: "Physics Lab 01", price: "Active", imageSrc: "https://img.b2bpic.net/free-vector/shining-atom-model-nuclear-model-atom-with-electrons-positrons-illustration_1284-53085.jpg" },
+        { id: "a2", name: "Reflex Trainer", price: "Fast", imageSrc: "https://img.b2bpic.net/free-photo/bright-neon-colors-illuminated-arrow_23-2151204940.jpg" },
+        { id: "a3", name: "Logic Core", price: "Hard", imageSrc: "https://img.b2bpic.net/free-vector/gear-home-logo-design_474888-2080.jpg" },
+        { id: "a4", name: "Strategy Matrix", price: "Logic", imageSrc: "https://img.b2bpic.net/free-psd/3d-purple-gaming-controller-icon-digital-game-button-design_84443-55701.jpg" },
       ]}
       title="Game Library"
-      description="Choose from our curated collection of educational games."
+      description="Explore our high-octane collection of logic-driven simulations."
+      tag="Featured Games"
     />
   </div>
 
   <div id="features" data-section="features">
       <FeatureCardTwentyFive
-      animationType="slide-up"
-      textboxLayout="default"
-      useInvertedBackground={false}
+      animationType="blur-reveal"
+      textboxLayout="split"
+      useInvertedBackground={true}
       features={[
         {
-          title: "Momentum & Velocity",          description: "Apply real-world physics laws.",          icon: Zap,
+          title: "Advanced Analytics",          description: "Track every click and reaction time with millisecond precision.",          icon: BarChart2,
           mediaItems: [
-            { imageSrc: "http://img.b2bpic.net/free-vector/shining-atom-model-nuclear-model-atom-with-electrons-positrons-illustration_1284-53085.jpg" },
-            { imageSrc: "http://img.b2bpic.net/free-vector/illustration-four-superbikes-white-background_1308-984.jpg" },
+            { imageSrc: "https://img.b2bpic.net/free-vector/race-competition-icon-set_1284-1238.jpg" },
+            { imageSrc: "https://img.b2bpic.net/free-photo/target-with-arrow-3d-design-sport-game-business-design_460848-10716.jpg" },
           ],
         },
         {
-          title: "Resource Management",          description: "Model complex economic systems.",          icon: BarChart2,
+          title: "Smart Learning",          description: "Adaptive difficulty algorithms tailored to your cognitive progress.",          icon: Lightbulb,
           mediaItems: [
-            { imageSrc: "http://img.b2bpic.net/free-vector/snacks-collection_23-2147947560.jpg" },
-            { imageSrc: "http://img.b2bpic.net/free-photo/top-view-american-footballs-with-flame_23-2148878370.jpg" },
-          ],
-        },
-        {
-          title: "Critical Logic",          description: "Sharpen your pattern recognition.",          icon: Lightbulb,
-          mediaItems: [
-            { imageSrc: "http://img.b2bpic.net/free-psd/3d-purple-gaming-controller-icon-digital-game-button-design_84443-55701.jpg" },
-            { imageSrc: "http://img.b2bpic.net/free-vector/gear-home-logo-design_474888-2080.jpg" },
+            { imageSrc: "https://img.b2bpic.net/free-vector/delicious-bakery-products-sweets_23-2147555183.jpg" },
+            { imageSrc: "https://img.b2bpic.net/free-vector/collection-football-accessories-flat-design_23-2147596251.jpg" },
           ],
         },
       ]}
-      title="Why Educational Gaming?"
-      description="Engaging games serve as powerful labs for testing physics, economics, and decision theory."
+      title="Platform Focus"
+      description="Built for maximum engagement and cognitive optimization."
     />
   </div>
 
@@ -132,22 +118,23 @@ export default function LandingPage() {
       <FaqSplitText
       useInvertedBackground={false}
       faqs={[
-        { id: "f1", title: "Are these games free?", content: "Yes, all games on our platform are accessible for free." },
-        { id: "f2", title: "Do I need an account?", content: "No account required, just click and play." },
-        { id: "f3", title: "Can I suggest a game?", content: "Use the contact form to reach out to our team." },
+        { id: "1", title: "Is it really free?", content: "Yes, the core simulation library is completely free and accessible to all users." },
+        { id: "2", title: "How do I sync progress?", content: "Progress is saved locally via browser sessions or to your registered account." },
+        { id: "3", title: "Supported browsers?", content: "ArcadeHub is optimized for Chrome, Edge, and Firefox." },
       ]}
-      sideTitle="Questions?"
+      sideTitle="FAQ"
+      sideDescription="Commonly asked questions about the portal."
       faqsAnimation="slide-up"
     />
   </div>
 
   <div id="contact" data-section="contact">
       <ContactCenter
-      useInvertedBackground={false}
-      background={{ variant: "gradient-bars" }}
-      tag="Newsletter"
-      title="Stay Updated"
-      description="Get notified about the latest educational games and updates."
+      useInvertedBackground={true}
+      background={{ variant: "sparkles-gradient" }}
+      tag="Get In Touch"
+      title="Join the Network"
+      description="Sign up to get exclusive access to our research papers and beta tests."
     />
   </div>
 
@@ -155,9 +142,8 @@ export default function LandingPage() {
       <FooterBaseReveal
       logoText="ArcadeHub"
       columns={[
-        { title: "Library", items: [{ label: "All Games", href: "#library" }] },
-        { title: "Support", items: [{ label: "FAQ", href: "#faq" }, { label: "Contact", href: "#contact" }] },
-        { title: "Legal", items: [{ label: "Privacy Policy", href: "#" }] },
+        { title: "Navigation", items: [{ label: "Games", href: "#library" }, { label: "Metrics", href: "#metrics" }] },
+        { title: "Resources", items: [{ label: "FAQ", href: "#faq" }, { label: "Contact", href: "#contact" }] },
       ]}
     />
   </div>
