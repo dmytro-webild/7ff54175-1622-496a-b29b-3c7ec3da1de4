@@ -63,7 +63,7 @@ export default function LandingPage() {
       ]}
       slides={[
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/retro-vhs-packaging-indoors_23-2150172444.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/retro-vhs-packaging-indoors_23-2150172444.jpg?_wi=1",
           imageAlt: "Educational gaming platform",
         },
         {
@@ -127,13 +127,13 @@ export default function LandingPage() {
           id: "g1",
           name: "Slope",
           price: "Logic",
-          imageSrc: "http://img.b2bpic.net/free-vector/race-competition-icon-set_1284-1238.jpg",
+          imageSrc: "http://img.b2bpic.net/free-vector/race-competition-icon-set_1284-1238.jpg?_wi=1",
         },
         {
           id: "g2",
           name: "1v1.LOL",
           price: "Strategy",
-          imageSrc: "http://img.b2bpic.net/free-photo/target-with-arrow-3d-design-sport-game-business-design_460848-10716.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/target-with-arrow-3d-design-sport-game-business-design_460848-10716.jpg?_wi=1",
         },
         {
           id: "g3",
@@ -183,7 +183,7 @@ export default function LandingPage() {
               imageSrc: "http://img.b2bpic.net/free-vector/illustration-four-superbikes-white-background_1308-984.jpg",
             },
           ],
-          imageSrc: "http://img.b2bpic.net/free-photo/retro-vhs-packaging-indoors_23-2150172444.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/retro-vhs-packaging-indoors_23-2150172444.jpg?_wi=2",
           imageAlt: "drifting car icon flat",
         },
         {
@@ -198,7 +198,7 @@ export default function LandingPage() {
               imageSrc: "http://img.b2bpic.net/free-photo/top-view-american-footballs-with-flame_23-2148878370.jpg",
             },
           ],
-          imageSrc: "http://img.b2bpic.net/free-vector/race-competition-icon-set_1284-1238.jpg",
+          imageSrc: "http://img.b2bpic.net/free-vector/race-competition-icon-set_1284-1238.jpg?_wi=2",
           imageAlt: "drifting car icon flat",
         },
         {
@@ -213,7 +213,7 @@ export default function LandingPage() {
               imageSrc: "http://img.b2bpic.net/free-vector/gear-home-logo-design_474888-2080.jpg",
             },
           ],
-          imageSrc: "http://img.b2bpic.net/free-photo/target-with-arrow-3d-design-sport-game-business-design_460848-10716.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/target-with-arrow-3d-design-sport-game-business-design_460848-10716.jpg?_wi=2",
           imageAlt: "drifting car icon flat",
         },
       ]}
